@@ -1,0 +1,937 @@
+/********** Common CSS Starts **********/  
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+body{
+  background-color: #ffecb3;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(173, 171, 171);
+}
+
+.nav_logo {
+  width: 100%;
+  height: 50%;
+}
+
+.nav_logo img{
+  width: 200px;
+  height: 60px;
+  margin-bottom: 0px;
+  margin-top: -12px;
+}
+
+.nav_bar ul li{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-right: 25px;
+  
+  /* border: 1px solid aqua; */
+}
+
+.nav_bar ul li a{
+  /* margin-inline: 22px; */
+  text-decoration:none;
+  color: black;
+  letter-spacing: 1px;
+  margin: auto;
+  font-size: 15px;
+  margin-left: 30px;
+  background-color: white;
+  
+  /* margin-right:15px; */
+ 
+  /* justify-content: space-around; */
+  /* display: flex; */
+  /* border: 2px solid white; */
+}
+
+.nav_bar ul li a:hover{
+  color: red;
+  border-bottom: 2px solid red;
+
+}
+
+/********** Common CSS Ends **********/
+
+  /**********  Logo and Search Panel CSS Code Starts  **********/
+  
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+/* The search field */
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#myInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content fa fa-search{
+  margin-bottom: 100px;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+  /**********  Logo and Search Panel CSS Code Ends  **********/
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  padding-top: -100px;
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 25px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.categories h1{
+  color: #0C356A;
+}
+
+.categories img{
+  margin-left: 150px;
+}
+
+  /**********  Product-Section CSS Code Starts  **********/
+.product-section {
+	padding-left:15px;
+	padding-right:15px;
+	margin-bottom:20px;
+  display: flex;
+  column-gap: 40px;
+  background-color: #ffffff;
+}
+
+.product-img {
+	width:auto;
+	height:270px;
+  column-gap: 40px;
+}
+
+.product-border {
+	padding:20px;
+}
+
+.product-name a {
+	color: #232b33;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.product-discounted-price {
+	color: #333;
+	font-size: 18px;
+	letter-spacing: 0.1px;
+	font-weight: 600;
+}
+
+.product-original-price {
+	color: #6f6f6f;
+	text-decoration: line-through;
+	font-size:14px;
+}
+
+.product-discount {
+	border: 1px solid #ccc;
+	background: #fff;
+	display: inline-block;
+	font-size: 10px;
+	color: #999;
+	padding: 5px;
+	border-radius: 1px;
+}
+
+.product-price {
+	margin-top:15px;
+}
+
+.mySlides fade{
+  margin-right: 60px;
+
+}
+nav{
+  position:fixed;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  background-color:white;
+  padding: 22px;
+  box-shadow: 0px 2px 6px 2px gray;
+  color: red;
+  height: 80px;
+  z-index:9999;
+
+}
+nav ul li a{
+  margin-inline: 22px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+ul li{
+  list-style: none;
+}
+nav ul{
+    margin-right:33px;
+}
+ul li button{ 
+  width: 100px;
+  height: 33px;
+  background-color: yellow;
+}
+ul li button:hover{
+  border:2px solid white;
+  background-color: transparent;
+  color: yellow;
+}
+
+
+/**********   Product-Section CSS Code Ends  **********/
+
+/**********  Footer-Section CSS Code Starts  **********/
+
+.footer {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  padding: 22px;
+  box-shadow: 0px 2px 6px 4px rgb(36, 36, 36);
+  background-color: white;
+  }
+
+  .footer .footerText{
+    margin-inline: 73px;
+    margin-top: -10px;
+  }
+  
+  .footerText p{
+  margin-top: 11px;
+  color: black;
+  font-size: 15px;
+  }
+  .footer h6{
+    color: black;
+  }
+
+  .footerText h2{
+    color: #0C356A;
+  }
+
+  /**********  Footer-Section CSS Code Ends  **********/
+
+   /**********  Sign-up CSS Code Starts  **********/
+
+.signup-box{
+  width: 360px;
+  height: 560px;
+  margin: auto;
+  background-color: #1d2d3f;
+  border-radius: 3px;
+}
+
+.login-box{
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #1d2d3f;
+
+}
+
+h1{
+  text-align: center;
+  padding-top: 15px;
+}
+
+h4{
+  text-align: center;
+}
+
+form{
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label{
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: white;
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="button"]{
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+p{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.para-2{
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.para-2 a{
+  color: #0C356A;
+}
+
+.about-us{
+  padding: 50px 0px;
+  justify-content: center;
+  margin-top: 53px;
+  padding: 22px;
+}
+
+h1{
+  text-align: center;
+  color: #49c1a2;
+}
+
+h2{
+  text-align: center;
+  color: black;
+  padding-top: 20px;
+}
+
+p{
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+/**********  Sign-up CSS Code Ends **********/
+
+/**********  Membership CSS Code Starts **********/
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-family: 'Poppins', sans-serif; 
+} 
+
+.tags { 
+	width: 100%; 
+	min-height: 75vh;  
+} 
+
+.tags h2 { 
+	color: #1d2d3f; 
+	font-size: 32px; 
+	padding: 15px 0 20px 0; 
+	margin-left: 0%; 
+} 
+
+.tags h3 { 
+  padding: 15px 0 20px 0; 
+	margin-left: 41%;
+	font-size: 24px; 
+	color: #0C356A; 
+} 
+
+.price-row { 
+	width: 81%; 
+	margin: auto; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+	grid-gap: 30px; 
+} 
+
+.price-col { 
+	transition: box-shadow .5s; 
+	transition: transform; 
+	background: #61677A; 
+	padding: 10% 10%; 
+	border-radius: 10px; 
+	color: #D8D9DA; 
+	text-align: center; 
+} 
+
+hr { 
+	padding: -10% !important; 
+} 
+
+.price-col:hover { 
+	box-shadow: 0 0 20px rgba(9, 157, 194, 0.2); 
+	transform: scale(1.04); 
+} 
+
+.price-col p { 
+	font-size: 22px; 
+} 
+
+.price-col h3 { 
+	color: whitesmoke; 
+	font-size: 44px; 
+	margin: 15px 0 20px; 
+	font-weight: 500; 
+} 
+
+.price-col h3 span { 
+	font-size: 25px; 
+} 
+
+.price-col ul { 
+	text-align: left; 
+	margin: 10px 0; 
+	color: #0C356A; 
+	list-style: none; 
+} 
+
+.price-col ul li { 
+	border-bottom: 2px solid #feffff; 
+	font-size: 20px; 
+	color: #ffffff; 
+	padding: 8px; 
+	text-align: left; 
+} 
+
+.price-col button { 
+	background-color: #EEE0C9; 
+	border: 1px solid white; 
+	border-radius: 5px; 
+	margin: 20px 0 0 0; 
+	color: #001c38; 
+	padding: 10px 25px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 18px; 
+} 
+
+.price-col button:hover { 
+	background: #091c23; 
+	color: white; 
+} 
+
+#best { 
+	background: #272829 !important; 
+} 
+
+p { 
+	font-size: 24px !important; 
+	margin-bottom: 10px; 
+	margin-top: -10px; 
+} 
+
+#prem { 
+	color: gold !important; 
+	text-shadow: 1px 1px gold; 
+}
+
+.tags h3 input[type="button"]{
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: -40px;
+  border: none;
+  background-color: #0C356A;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/**********  Membership CSS Code Ends **********/
+
+
+/**********  Membership details CSS Code Starts **********/
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+.details p{
+  color: #0C356A;
+  padding: 15px 0 20px 0; ;
+}
+
+.details h2{
+  padding: 15px 0 20px 0; 
+}
+
+.details h1{
+  color: #0C356A;
+}
+
+/**********  Membership details CSS Code Ends **********/
+
+/**********  Review CSS Code Starts **********/
+
+.review {
+  width: 100%;
+  height: 40vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #90a4ae;
+}
+
+.review h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0C356A;
+}
+
+.review p{
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  text-align: center;
+  width: 43%;
+}
+
+.clientImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clientImage span {
+  margin-left: 10px;
+}
+
+.clientImage img {
+  width: 40px;
+}
+
+.reviewSection {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reviewItem {
+  width: 300px;
+  padding: 10px;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #10102a;
+  border: 1px solid #10102a;
+  transition: all .2s linear;
+}
+
+.reviewItem:hover {
+  border-color: black;
+  transform: scale(1.01);
+  background-color: #090921;
+  box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+.top {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top ul {
+  display: flex;
+  list-style: none;
+}
+
+.top ul li {
+  padding-left: 4px;
+}
+
+article p {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-family: system-ui;
+}
+
+
+@media screen and (max-width:700px) {
+  .review {
+      height: auto;
+  }
+
+  .description {
+      width: 90%;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .reviewSection {
+      padding: 0;
+  }
+
+  .reviewItem {
+      width: 100%;
+  }
+
+  .clientImage {
+      margin-bottom: 0.6rem;
+  }
+
+  .top {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+}
+
+/**********  Review CSS Code Ends **********/
+
+/**********  Founders CSS Code Starts **********/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.founders h1{
+  color: #0C356A;
+}
+
+.card h1{
+  color: #0C356A;
+}
+
+.card p{
+  color: brown;
+}
+
+/**********  Founders CSS Code Ends **********/
+
+
+/**********  About us CSS Code Starts **********/
+
+.about-us h1{
+  color: black;
+}
+
+.about-us p{
+  color: white;
+}
+
+.about-us{
+  background-color: rgb(247, 178, 75);
+}
+.image-left h2{
+  color: #0C356A;
+}
+
+.image-left p{
+  text-align: left;
+  margin-right: 20px;
+}
+
+.image-right h2{
+  color: #0C356A;
+}
+
+.image-right p{
+  text-align: left;
+  margin-left: 20px;
+}
+
+/**********  About us CSS Code Ends **********/
+
+/**********  Privacy Policy CSS Code Starts **********/
+
+.privacy_policy h1{
+  color: #0C356A;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.privacy_policy h2{
+  color: #0C356A;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.privacy_policy p{
+  color: #000;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.privacy_policy ul li{
+  color: #0C356A;
+  text-align: left;
+  margin-left: 20px;
+  font-size: x-large;
+}
+
+/**********  Privacy Policy CSS Code Ends **********/
+
+/**********  Shop CSS Code Starts **********/
+
+.product {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+ }
+ 
+ .product_img img {
+   max-width: 150%;
+   max-height:150%;
+   margin-left: -100px;
+   margin-top: -20px;
+ }
+ 
+ .product_desc {
+   font-size: 70px;
+   padding: 8px;
+   line-height: 5px;
+   margin-left: 170px;
+   justify-content: center;
+ }
+
+ .product_desc h2{
+  color: #0C356A;
+  font-size: medium;
+  padding: 8px;
+  line-height: 5px;
+ }
+
+ .product_desc ul li{
+  color: #000;
+  font-size: small;
+  text-align: center;
+  padding: 8px;
+  line-height: 5px;
+ }
+
+.product_desc button {
+  padding: 10px 24px;
+  font-size: 10px;
+  border-radius: 70%;
+  height: 30px;
+  width: 30px;
+}
+
+/**********  Shop CSS Code Ends **********/
+
+/*.na img{
+  width: 25%;
+  height: 25%;
+  margin-top: 20px;
+  margin-left: 500px;
+}*/

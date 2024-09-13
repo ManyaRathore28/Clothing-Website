@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STREET VOGUE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/WhatsApp Image 2024-01-03 at 10.49.30 PM.jpeg">
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+
+    <style>
+   
+
+.cd__main{
+    max-width: 720px !important;
+}
+
+img
+{max-width: 35%;
+height: 35%;
+}
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+    margin-left: 20px;
+		margin-right: 1em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+    margin-right: 20px;
+		order: 1;
+		margin-left: 1em;
+		float: right; /* fallback */
+	}
+	
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+    </style>
+
+</head>
+<body>
+
+  <!---------- Logo and Search Panel HTML Code Starts --------->
+
+<div class="container">
+  
+    <nav>
+      <div class="nav_logo">
+        <a href="home.html"><img src="./img/WhatsApp Image 2024-01-26 at 8.48.04 PM.jpeg" alt="nav_logo" /></a>
+      </div>
+
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">SHOP!</button>
+        <div id="myDropdown" class="dropdown-content">
+          
+          <a href="street.html">Street wear</a>
+          <a href="casual.html">Casual wear</a>
+          <a href="abc.html">New Arrivals</a>
+        </div>
+      </div>
+
+      <div class="nav_bar">
+        <ul>
+          <li>
+              <a href="home.html" id="homes" onclick="home()">HOME</a>
+              <a href="member.html" id="member" onclick="member()">MEMBERSHIP</a>
+              <a href="about.html" id="plans" onclick="plan()">ABOUT US</a>
+              <a href="signup.html" id="signup" onclick="signup()">LOGIN & SIGNUP</a>
+
+          </li>
+      </ul>
+      </div>
+
+      </nav>
+    </div>
+
+      <br>
+      <br>
+      <br>
+    
+        <!---------- Logo and Search Panel HTML Code Ends --------->
+
+        <div class="about-us">
+            <h1>Welcome to STREETVOGUE - Your ultimate destination for casual and street wear</h1>
+            <p>At STREETVOGUE, we're dedicated to bringing you the latest trends, timeless classics, and everything in between.</p>
+            <p>Our passion for fashion drives us to curate a diverse collection that caters to every style and personality</p>
+        </div>
+
+            <br>
+            <br>
+
+            <div class="image-left">
+              <img src="./img/about.jpeg" alt="Text with image example">
+              <div>
+            <h2>Who We Are:</h2>
+            <p>We are a team of fashion enthusiasts with a keen eye for style and commitment to providing our customers with an exceptional shopping experience.</p>
+            <p>Our diverse backgrounds and expertise in the fashion industry allow us to stay ahead of the curve and bring you the most coveted pieces from around the globe</p>
+
+            <h2>What We Offer:</h2>
+            <p>From chic apparel to statement accessories, we offer a curated selection of high-quality products that are carefully chosen to reflect the latest trends and cater to various tastes. </p>
+            <p>Whether you're looking for the perfect outfit for a night out or seeking everyday essentials with a twist, we have you covered.</p>
+
+              </div>
+            </div>
+
+            <div class="image-right">
+              <img src="./img/about2.jpeg" alt="Text with image example">
+              <div>
+            <h2>Why Choose Us:</h2>
+            <p>Inclusive Fashion for Everyone: At STREETVOGUE, we believe that great style knows no boundaries. Our collections cater to all shapes, sizes, and tastes, ensuring that everyone can express their unique sense of fashion.</p>
+            <p>Quality That Speaks Volumes: We prioritize quality in every stitch and detail. We source premium materials to guarantee a soft touch against your skin and long-lasting wear.</p>
+            
+            <h2>Explore Our Collections:</h2>
+            <p>Casual Essentials: Dive into our curated selection of everyday essentials that seamlessly blend comfort and style. From cozy hoodies to versatile joggers, our casual collection is designed for the moments that matter most.</p>
+            <p>Streetwear Vibes: Make a statement with our streetwear-inspired pieces that exude urban flair. Bold graphics, unique cuts, and the latest trends come together to create a collection that embraces the spirit of the streets.</p>
+
+
+              </div>
+            </div> 
+
+            <div class="about-us">
+            <h1>Stay Connected with STREETVOGUE</h1>
+            <p>Join our community of fashion enthusiasts! Register to our newsletter for the latest trends, style tips, and exclusive offers.</p>
+            <p>Express yourself with confidence through our carefully curated collections. Shop now and redefine casual and streetwear fashion with STREETVOGUE.</p>
+            </div>
+
+    <!-- Footer-Section HTML Code STARTS -->
+
+    <div class="footer" >
+  
+      <div class="footerText">
+          <h2>More Info</h2>
+          <p><a href="founders.html">Founders</a></p>
+          <p><a href="reviews.html">Reviews</a></p>
+          <p><a href="pp.html">Privacy Policy</a></p>
+        </div>
+    
+        <div class="footerText">
+          <h2>Contact Us</h2>
+          <p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p>
+          <p><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</p>
+          <p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
+          <br>
+          <br>
+          <h6> <i class="fa fa-copyright" aria-hidden="true" ></i>STREETVOGUE 2024-25</h6>    
+      </div>
+    
+      <div class="footerText">
+          <h2>Our Stores</h2>
+          <p>Mumbai</p>
+          <p>Delhi</p>
+          <p>Bangalore</p>
+          
+        </div>
+      
+    </div>
+    
+        <!---------- Footer-Section HTML Code Ends --------->
+        
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
